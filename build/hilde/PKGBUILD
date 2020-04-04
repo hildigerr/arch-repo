@@ -1,7 +1,7 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=hilde
 pkgver=0.0.1
-pkgrel=1
+pkgrel=3
 pkgdesc="Lightweight Desktop Environment"
 arch=('any')
 url="https://github.com/hildigerr/HilDE"
@@ -19,6 +19,7 @@ depends=(
     'xorg-xdm'
     'xorg-xmessage'
     'lwm'
+    'notification-daemon'
 )
 
 # Session Startup
@@ -42,7 +43,6 @@ depends+=(
 
 optdepends=(
     'termit-git: recommended terminal emulator'
-    'medit: recommended text editor'
     'sxiv: recommended immage viewer'
     'speedcrunch: recommended calculator'
     'firefox: recommended browser'
@@ -52,7 +52,6 @@ optdepends=(
     'meld: vidual diff and merge utility'
     'pdfarranger: pdf manipulation utility'
     'gimp: image file manipulation utility'
-    'ghex: recommended hex editor'
     'sox: sound processing'
 )
 
