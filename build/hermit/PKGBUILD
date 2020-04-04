@@ -1,6 +1,6 @@
 # Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
 pkgname=termit-git
-pkgver=3.1.r3
+pkgver=3.2.1.r0
 pkgrel=2
 pkgdesc="Terminal emulator based on VTE library with Lua scripting"
 arch=('i686' 'x86_64')
@@ -15,17 +15,16 @@ md5sums=('SKIP')
 
 prepare() {
   cd "$srcdir/${pkgname%-git}"
-  git checkout hermit
 }
 
 pkgver() {
   cd "$srcdir/${pkgname%-git}"
-  git describe --tags --long --match="termit-*" | awk -F- '{printf "%s.r%s", $2, $3}'
+  git describe --tags --long | awk -F- '{printf "%s.r%s", $1, $2}'
 }
 
 build() {
   cd "$srcdir/${pkgname%-git}"
-  cmake -DCMAKE_C_FLAGS="-I/usr/include/vte-2.91" -DCMAKE_INSTALL_PREFIX=/usr .
+cmake -DCMAKE_C_FLAGS="-I/usr/include/vte-2.91" -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=/usr .
   make
 }
 

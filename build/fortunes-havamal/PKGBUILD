@@ -1,0 +1,29 @@
+# Maintainer: Hildigerr Vergaray <Maintainer at YmirSystems dot com>
+
+pkgname=fortune-mod-havamal
+pkgver=1
+pkgrel=1
+pkgdesc="Data files containing The Havamal fortune cookies."
+arch=('any')
+license=('custom:PublicDomain')
+url="https://code.launchpad.net/~moonsdad/+junk/fortunes-havamal"
+depends=('fortune-mod')
+groups=('fortune-mods')
+
+source=(
+  'havamal.txt'
+)
+
+sha256sums=(
+  'eff4246a75705724213993b646590a2609c6e1094700fb218ff1c0e060fcead1'
+)
+
+
+build() {
+	strfile ${srcdir}/havamal.txt ${srcdir}/havamal.dat
+}
+
+package() {
+  install -D -m644 ${srcdir}/havamal.txt ${pkgdir}/usr/share/fortune/havamal
+  install -D -m644 ${srcdir}/havamal.dat ${pkgdir}/usr/share/fortune/havamal.dat
+}
