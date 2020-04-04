@@ -1,0 +1,29 @@
+# Maintainer: Hildigerr Vergaray <Maintainer@YmirSystems.com>
+pkgname=bugd-git
+pkgver=1.1.2
+pkgrel=2
+pkgdesc="Simple bug tracking program providing a GTK interface to a SQLite3 database."
+arch=('i686' 'x86_64')
+url="https://github.com/hildigerr/bugd"
+license=('Artistic2.0')
+depends=('sqlite' 'gtk2' 'gdk-pixbuf2' 'glib2' 'glibc' 'confuse')
+provides=("${pkgname%-git}")
+conflicts=("${pkgname%-git}")
+makedepends=('git')
+source=("bugd::git+${url}")
+md5sums=('SKIP')
+
+prepare() {
+  cd "$srcdir/${pkgname%-git}"
+}
+
+build() {
+  cd "$srcdir/${pkgname%-git}"
+  make
+}
+
+package ()
+{
+  cd "$srcdir/${pkgname%-git}"
+  make DESTDIR="$pkgdir" install
+}

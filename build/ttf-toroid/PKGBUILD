@@ -1,0 +1,22 @@
+# Maintainer: Hildigerr Vergaray <Maintainer at YmirSystems dot com>
+
+pkgname=ttf-toroid
+pkgver=1.1
+pkgrel=1
+pkgdesc="Droid fonts modified to have slashed zeros"
+arch=('any')
+license=('Apache')
+url="https://github.com/hildigerr/font-toroid"
+provides=('ttf-font')
+
+source=(
+  "${url}/archive/v${pkgver}.tar.gz"
+)
+sha256sums=(
+  'e73ecb2842231433bfe1d8862bbbae4f654de23fe3e38c5c1205b2ca22b2a913'
+)
+
+package() {
+  cd "${srcdir}/font-toroid-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}
