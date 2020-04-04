@@ -1,6 +1,6 @@
 
 add:
-	repo-add --verify --key ${GPGKEY} -R x86_64/hildigerr.db.tar.xz x86_64/*.pkg.tar.xz
+	repo-add --verify --key ${GPGKEY} -R x86_64/hildigerr.db.tar.xz x86_64/*.pkg.tar.xz x86_64/*.pkg.tar.zst
 
 hardlink:
 	rm -f x86_64/*.old x86_64/hildigerr.db x86_64/hildigerr.files
@@ -12,3 +12,7 @@ index:
 	| awk {'print "<a href=\""$$8"\">\n"$$8"</a>    "$$6" "$$7"        "$$5'} \
 	>> x86_64/index.html
 	@echo "Now edit: x86_64/index.html"
+
+squash:
+	echo -e "2s/pick/squash/\nw\nq\n8\nd\nw\nq" | \
+	EDITOR=ed git rebase --interactive 1b07234
