@@ -29,6 +29,12 @@ Whenever you update a package replace the old files in the `x86_64` with the new
 
 Be sure to update the `readme.md` and `index.html` files to list your available packages for people who may decide to enable your repository on their machines.
 
+To avoid the repository from getting too large too quick, you should always only have three commits: `02ebeb7 init`, `1edf383 build template`, and the final one with your deployment. After you fork this, delete the master branch. Then make a new master branch based on the `forkme` branch. On your new master branch `reset HEAD~`. Then make all the changes for your first deployment.
+
+After getting everything set, add all the new files and changes and make a new commit. Once you force push it up to GitHub, your repository will be available. You will have to use `git push -f origin master` each time you update.
+
+For updates, you don't have to reset the HEAD again. Simply add the changes to a new commit (I usually commit it as `"squash this"`). Then run the `make squash` target. Note that it relies on the [ed](https://www.archlinux.org/packages/core/x86_64/ed/) editor just because that is what I use. If you don't want to install ed, then just [squash](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) it however you normally would.
+
 ### Description
 
 This is my [custom repository](https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks#Custom_local_repository) for packages that I use on my [Arch Linux](https://www.archlinux.org/) systems.

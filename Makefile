@@ -12,3 +12,7 @@ index:
 	| awk {'print "<a href=\""$$8"\">\n"$$8"</a>    "$$6" "$$7"        "$$5'} \
 	>> x86_64/index.html
 	@echo "Now edit: x86_64/index.html"
+
+squash:
+	echo -e "2s/pick/squash/\nw\nq\n8\nd\nw\nq" | \
+	EDITOR=ed git rebase --interactive 1edf383
