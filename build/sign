@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sign() {
+  gpg -u $GPGKEY --output "$1.sig" --detach-sign "$1"
+}
