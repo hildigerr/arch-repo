@@ -14,12 +14,13 @@ Server = https://hildigerr.github.io/arch-repo/$arch
 
 ### Available Packages
 
- - [**Aleph One**](https://alephone.lhowon.org/) is the open source continuation of [Bungie](https://www.bungie.net/)’s Marathon 2 game engine.
+ - [**Aleph One**](https://alephone.lhowon.org/) is the open source continuation of [Bungie](https://www.bungie.net/)’s Marathon 2 game engine
  - [**brother-mfcj425w**](https://github.com/hildigerr/brother-mfcj425w) [Printer](https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfcj425w_us) driver with my buffer overflow bugfix
  - [**BugD**](https://github.com/hildigerr/bugd) simple Bug Database using [SQLite](https://www.sqlite.org/index.html) and GTK.
  - [**fbautostart**](https://aur.archlinux.org/packages/fbautostart/) XDG compliant autostarter
- - [**fortune-mod-havamal**](https://code.launchpad.net/~moonsdad/+junk/fortunes-havamal) The Olive Bray translation of The [Havamal](https://www.pitt.edu/~dash/havamal.html) as [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/) cookies.
+ - [**fortune-mod-havamal**](https://code.launchpad.net/~moonsdad/+junk/fortunes-havamal) The Olive Bray translation of The [Havamal](https://www.pitt.edu/~dash/havamal.html) as [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/) cookies
  - [**HilDE**](https://github.com/hildigerr/HilDE) is a lightweight desktop environment
+ - [**lwm**](https://www.jfc.org.uk/software/lwm.html) lightweight window manager
  - [**MTag**](http://github.com/hildigerr/mtag) music file tag manipulator
  - [**termit**](https://github.com/hildigerr/hermit) terminal emulator including my [topMenu](https://github.com/nonstop/termit/pull/118) option enabled by default
  - [**ttf-toroid**](https://github.com/hildigerr/font-toroid) is [Droid fonts](http://www.droidfonts.com) with [slashed zeros](https://en.wikipedia.org/wiki/Slashed_zero) (provides ttf-font)
