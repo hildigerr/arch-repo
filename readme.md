@@ -19,6 +19,7 @@ Server = https://hildigerr.github.io/arch-repo/$arch
  - [**BugD**](https://github.com/hildigerr/bugd) simple Bug Database using [SQLite](https://www.sqlite.org/index.html) and GTK.
  - [**fbautostart**](https://aur.archlinux.org/packages/fbautostart/) XDG compliant autostarter
  - [**fortune-mod-havamal**](https://code.launchpad.net/~moonsdad/+junk/fortunes-havamal) The Olive Bray translation of The [Havamal](https://www.pitt.edu/~dash/havamal.html) as [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/) cookies
+ - [**grub-theme-victoria**](https://github.com/hildigerr/system-setup/tree/master/grub/victoria) a simple steampunk grub theme that I put together.
  - [**HilDE**](https://github.com/hildigerr/HilDE) is a lightweight desktop environment
  - [**lwm**](https://www.jfc.org.uk/software/lwm.html) lightweight window manager
  - [**MTag**](http://github.com/hildigerr/mtag) music file tag manipulator
