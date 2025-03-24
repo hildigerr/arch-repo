@@ -15,6 +15,7 @@ Server = https://hildigerr.github.io/arch-repo/$arch
 ### Available Packages
 
  - [**Aleph One**](https://alephone.lhowon.org/) is the open source continuation of [Bungie](https://www.bungie.net/)’s Marathon 2 game engine
+ - [**app-menu-links**](https://github.com/hildigerr/system-setup/tree/master/apps) adds links to select web apps into the application menu
  - [**brother-mfcj425w**](https://github.com/hildigerr/brother-mfcj425w) [Printer](https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfcj425w_us) driver with my buffer overflow bugfix
  - [**BugD**](https://github.com/hildigerr/bugd) simple Bug Database using [SQLite](https://www.sqlite.org/index.html) and GTK.
  - [**fbautostart**](https://aur.archlinux.org/packages/fbautostart/) XDG compliant autostarter
