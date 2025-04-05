@@ -27,6 +27,7 @@ Server = https://hildigerr.github.io/arch-repo/$arch
  - [**MTag**](http://github.com/hildigerr/mtag) music file tag manipulator
  - [**termit**](https://github.com/hildigerr/hermit) terminal emulator including my [topMenu](https://github.com/nonstop/termit/pull/118) option enabled by default
  - [**ttf-toroid**](https://github.com/hildigerr/font-toroid) is [Droid fonts](http://www.droidfonts.com) with [slashed zeros](https://en.wikipedia.org/wiki/Slashed_zero) (provides ttf-font)
+ - [**xdg-launcher**](https://github.com/hildigerr/xdg-launcher) to enfoce XDG Base Directory compliance for any application. 
 
 ### TODO:
 
