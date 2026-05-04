@@ -20,6 +20,7 @@ Server = https://hildigerr.github.io/arch-repo/$arch
  - [**BugD**](https://github.com/hildigerr/bugd) simple Bug Database using [SQLite](https://www.sqlite.org/index.html) and GTK.
  - [**fbautostart**](https://aur.archlinux.org/packages/fbautostart/) XDG compliant autostarter
  - [**fortune-mod-havamal**](https://code.launchpad.net/~moonsdad/+junk/fortunes-havamal) The Olive Bray translation of The [Havamal](https://www.pitt.edu/~dash/havamal.html) as [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/) cookies
+ - [**gnome-blackjack**](https://github.com/hildigerr/blackjack) the multiple deck, casino rules blackjack game resurected from [gnome-games](https://wiki.gnome.org/Attic/Games) v2.28.2
  - [**grub-theme-victoria**](https://github.com/hildigerr/system-setup/tree/master/grub/victoria) a simple steampunk grub theme that I put together.
  - [**HilDE**](https://github.com/hildigerr/HilDE) is a lightweight desktop environment
  - [**hilde-lxmenu-data**](https://github.com/hildigerr/hilde-lxmenu-data) lxmenu data which reincludes game subcategories.
